@@ -1,0 +1,32 @@
+{
+  "name": "grindhouseproj2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "11.3.0",
+    "npm": "6.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averastlast/SEI-Project-2-Grindhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/averastlast/SEI-Project-2-Grindhouse/issues"
+  },
+  "homepage": "https://github.com/averastlast/SEI-Project-2-Grindhouse#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.5.2",
+    "morgan": "^1.9.1",
+    "start": "^5.1.0"
+  }
+}

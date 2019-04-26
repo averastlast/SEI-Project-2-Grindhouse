@@ -23,10 +23,12 @@ app.use(logger('dev'))
 app.use('/', routes)
 
 // LISTENERS
-const port = process.env.PORT||3000
+const port = process.env.PORT || 3000
 app.listen(port, function(){
     console.log("hello from the server side")
 })
+
+const mongoose = require('mongoose')
 
 // Connect to database
 if (process.env.MONGODB_URI) {

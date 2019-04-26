@@ -1,8 +1,10 @@
+const Axis = require("../models/Axis");
+
 const AxisController = {
   // function sends all Axis to axis/index.hbs view
   index: function(req,res) {
     Axis.find().then(axis=>{
-      res.render('axis/index',{axis});
+      res.render('axis/index',{ axis });
     })
   },
   // function that renders the axis/new.hbs form ???
@@ -47,4 +49,4 @@ const AxisController = {
   }
 }
 
-module.exports = {AxisController}
+module.exports = AxisController

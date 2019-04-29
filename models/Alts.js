@@ -5,7 +5,6 @@ const Schema = mongoose.Schema
 // create your donut schema:
 const AltSchema = new Schema(    {
     alias: String,
-    name: String,
     platform: String,
     hours: Number,
     youtubeLink: String,

@@ -4,17 +4,17 @@ const AltController = {
     // function sends all Alts to alts/index.hbs view
     index: function(req,res) {
       Alts.find().then(alts=>{
-        res.render('axis/index',{alts});
+        res.render('Alts/index',{alts});
       })
     },
     // function that renders the alts/new.hbs form ???
     new: function(req,res) {
-      res.render("alts/new");
+      res.render("Alts/new");
     },
     // function that renders a single alt show page
     show: function(req,res) {
       Alts.findById(req.params.id).then(alts =>{
-        res.render("alts/show", {alts})
+        res.render("Alts/show", {alts})
       })
     },
     // Create a function that creates a new alt acc
@@ -28,7 +28,7 @@ const AltController = {
     // sends that a Alts' data to it
     edit:function(req,res){
       Alts.findById(req.params.id).then(alts=>{
-        res.render('alts/edit',{alts})
+        res.render('Alts/edit',{alts})
         })
     },
     // Create a function that updates the alt acc and

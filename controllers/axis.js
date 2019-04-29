@@ -9,12 +9,12 @@ const AxisController = {
   },
   // function that renders the axis/new.hbs form ???
   new: function(req,res) {
-    res.render("Axis/new");
+    res.render("Axis/create");
   },
   // function that renders a single axis show page
   show: function(req,res) {
-    Axis.findById(req.params.id).then(donut =>{
-      res.render("Axis/show", {donut})
+    Axis.findById(req.params.id).then(axis =>{
+      res.render("Axis/show", {axis})
     })
   },
   // Create a function that creates a new axis acc

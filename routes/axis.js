@@ -1,8 +1,6 @@
 let express = require('express')
 let router = express.Router()
 const AxisController = require('../controllers/axis.js')
-// const AltsController = require('../controllers/alts.js')
-// const CommentsController = require('../controllers/comments.js')
 
 // Create a GET index route "/" that triggers the controller index function
 router.get('/', AxisController.index)

@@ -14,7 +14,7 @@ const AltController = {
     // function that renders a single alt show page
     show: function(req,res) {
       Alts.findById(req.params.id).then(alts =>{
-        res.render("alts/show", {alts})
+        res.render("alts/show", { alts })
       })
     },
     // Create a function that creates a new alt acc

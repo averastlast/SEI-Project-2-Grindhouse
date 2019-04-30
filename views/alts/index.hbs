@@ -1,19 +1,32 @@
 {{!-- comments under alt --}}
 <main>
-	<h2>Alt Account</h2>
+	<h2>Alt Accounts:</h2>
 
-		{{#each alts}}
+	{{#each alts}}
 
-			<div class="alt">
-
-				<a href='alts/{{_id}}'><h3>See More</h3></a>
-
-				<p>{{alias}}</p>
-
-			</div>
-
-		{{/each}}
+	<div class="alt">
 	
-<a href="/alts/new"><h2>Create a new account</h2></a>
+		<p>Alias: {{alias}}</p>
+	
+		<p>Game: {{game}}</p>
+		<p>Platform: {{platform}}</p>
+		<p>Hours spent in-game: {{hours}} hours</p>
+		<iframe width="560" height="315" src="{{youtubeLink}}" frameborder="0" 
+	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p>Account for sale?: {{forSale}}</p>
+		<p>Price: ${{price}}</p>
+		<a href='/alts/{{_id}}'>
+			<h3>See More</h3>
+		</a>
+	</div>
+
+	{{/each}}
+
+	<a href="/alts/new">
+		<h2>Create a new account</h2>
+	</a>
 
 </main>
+
+
+

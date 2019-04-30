@@ -2,18 +2,30 @@
 
 	<h2>Create Your Axis Account</h2>
 
-	<a href="/">Return to Home Page</a>
+	<div id="edit-form">
 
-	<div id="edit-form" class="axis-new">
-
-<form action="/" method="POST">
-	<input type="text" name="name" placeholder="name">
-	<input type="text" name="email" placeholder="email">
-	<input type="checkbox" name="boostOffer" placeholder="">
-	<input type="number" name="costPerHour" placeholder="price">
-	<input type="submit" value="Submit">
-</form>
-<a href="/"><h3>Back to home</h3></a>
+		<form action="/" method="POST" class="axis-new">
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id='name' placeholder="name">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id='email' placeholder="email">
+			</div>
+			<div>
+				<label for="boostOffer">Do you offer boosting?</label>
+				<input type="checkbox" name="boostOffer" id='boostOffer' placeholder="">
+			</div>
+			<div>
+				<label for="costPerHour">Cost per hour for boosting:</label>
+				<input type="number" name="costPerHour" id='costPerHour' placeholder="price">
+			</div>
+			<input type="submit" class='submit-button' value="Submit">
+		</form>
 
 	</div>
+	<a href="/">
+		<h3>Back to home</h3>
+	</a>
 </main>

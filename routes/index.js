@@ -5,8 +5,7 @@ const AxisController = require('../controllers/axis.js')
 const AltsController = require('../controllers/alts.js')
 // const CommentsController = require('../controllers/comments.js')
 
-// Create a GET index route "/" that triggers the controller index function - working
-//home
+// Create a GET index route "/" that triggers the controller index function HOME - working
 router.get('/', function(req, res,) {
     res.render('index');
 });
@@ -14,7 +13,7 @@ router.get('/', function(req, res,) {
 // Create a GET index route "/" that triggers the controller index function
 router.get('/axis', AxisController.index)
 
-// Create a GET new route "/new" that triggers the controller new function
+// Create a GET new route "/new" that triggers the controller new function - working
 router.get('/axis/:new', AxisController.new)
 
 // // Create a GET show route "/:id" that triggers the controller show function
@@ -41,7 +40,7 @@ router.get('/axis/:new', AxisController.new)
 router.get('/alts', AltsController.index)
 
 // Create a GET new route "/new" that triggers the controller new function - working
-router.get('/alts/:new', AltsController.new)
+router.get('/alts/new', AltsController.new)
 
 // Create a GET show route "/:id" that triggers the controller show function - working
 router.get('/alts/:id', AltsController.show)

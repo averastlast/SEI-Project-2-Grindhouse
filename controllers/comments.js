@@ -50,4 +50,4 @@ const CommentsController = {
     // }
   }
   
-  module.exports = {CommentsController}
+  module.exports = CommentsController

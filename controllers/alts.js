@@ -3,13 +3,13 @@ const Alts = require("../models/Alts");
 const AltController = {
     // function sends all Alts to alts/index.hbs view
     index: function(req,res) {
-      Alts.find().then(alts=>{
-        res.render('alts/index',{alts});
+      Alts.find().then( alts =>{
+        res.render('alts/index',{ alts });
       })
     },
     // function that renders the alts/new.hbs form ???
     new: function(req,res) {
-      res.render("alts/new");
+      res.render("alts/create");
     },
     // function that renders a single alt show page
     show: function(req,res) {
@@ -48,4 +48,4 @@ const AltController = {
     }
   }
   
-  module.exports = {AltController}
+  module.exports = AltController

@@ -1,29 +1,29 @@
 <main>
 
 	<h2>You are viewing:
-		{{alt.alias}}
+		{{alts.alias}}
 	</h2>
 
 	<a href="/">Return to Home Page</a>
 
 	<div class="alt-container">
 		<h2 id="alt-name">
-			{{alt.alias}}
+			{{alts.alias}}
 		</h2>
 
 		<br>
 
 		<h3>Platform:</h3>
 		<p>
-			{{alt.platform}}
+			{{alts.platform}}
 		</p>
         <br>
 
 		<h3>forSale:</h3>
 		<p id="offer">
-			{{alt.forSale}} </p><br>
+			{{alts.forSale}} </p><br>
 		<h3 id="price">
-			${{alt.price}} for account
+			${{alts.price}} for account
 		</h3>
 
 		<br>
@@ -34,7 +34,7 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
 
-		<a href="{{alt._id}}/edit">
+		<a href="{{alts._id}}/edit">
 			<h3>Edit</h3>
 		</a>
 		<form action="/{{axis._id}}?_method=DELETE" method="POST">

@@ -1,35 +1,16 @@
 <main>
 
-	<h2>You are viewing:
-		{{axis.name}}
-	</h2>
+	<h2>You are viewing: {{axis.name}} </h2>
 
-	<a href="/">Return to Home Page</a>
-
-	<div class="axis-container-show">
-		<h2 id="axis-name">
-			{{axis.name}}
-		</h2>
-
-		<br>
-
-		<h3>Email:</h3>
-		<p>
-			{{axis.email}}
-		</p>
-        <br>
-		<h3>boostOffer:</h3>
-		<p id="offer">
-			{{axis.boostOffer}} </p><br>
-		<h3 id="cost">
-
-			${{axis.costPerHour}} per hour
-
-		</h3>
-
-		<br>
-
-		<a href="{{axis._id}}/edit">
+	
+	<div class="axis-individual">
+	
+		<p>Name: {{axis.name}}</p>
+		<p>Email: {{axis.email}}</p>
+		<p>Offers boosting services? {{axis.boostOffer}}</p>
+		<p>Cost per hour: ${{axis.costPerHour}} </p>
+	
+		<a href="/axis/{{axis._id}}/edit">
 			<h3>Edit</h3>
 		</a>
 		<form action="/{{axis._id}}?_method=DELETE" method="POST">
@@ -37,5 +18,6 @@
 		</form>
 		
 	</div>
+<a href="/">Return to Home Page</a>
 
 </main>

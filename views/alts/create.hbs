@@ -1,16 +1,35 @@
 <main>
 
 	<h2>Create Alt</h2>
-	<div id="edit-form" class="alt-container">
+	<div id="edit-form">
 
-	<form action="/" method="POST">
-    <input type="text" name="alias" placeholder="alias">
-    <input type="text" name="platform" placeholder="platform">
-    <input type="text" name="youtubeLink" placeholder="youtubeLink">
-	<input type="checkbox" name="forSale" placeholder="">
-	<input type="number" name="price" placeholder="price">
+	<form action="/" method="POST" class="alt-new">
+	<div>
+		<label for="alias">Alias: </label>
+    	<input type="text" name="alias" id='alias' placeholder="alias">
+	</div>
+	<div>
+		<label for="game">Game: </label>
+    	<input type="text" name="game" id='game' placeholder="game">
+	</div>
+	<div>
+		<label for="platform">Platform: </label>
+    	<input type="text" name="platform" id='platform' placeholder="platform">
+	</div>
+	<div>
+		<label for="youtubeLink">Youtube Link: </label>
+    	<input type="text" name="youtubeLink" id='youtubeLink' placeholder="youtubeLink">
+	</div>
+	<div>
+		<label for="forSale">Account for Sale? </label>
+		<input type="checkbox" name="forSale" id='forSale'>
+	</div>
+	<div>
+		<label for="price">Price: $</label>
+		<input type="number" name="price" id='price' placeholder="price">
+	</div>
 
-    <input type="submit" value="Submit" onclick="add()">
+    <input type="submit" class='submit-button' value="Submit" onclick="add()">
 	</form>
 <a href="/"><h3>Back to home</h3></a>
 	</div>

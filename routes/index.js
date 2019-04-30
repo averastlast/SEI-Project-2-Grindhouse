@@ -14,16 +14,16 @@ router.get('/', function(req, res,) {
 router.get('/axis', AxisController.index)
 
 // Create a GET new route "/new" that triggers the controller new function - working
-router.get('/axis/:new', AxisController.new)
+router.get('/axis/new', AxisController.new)
 
-// // Create a GET show route "/:id" that triggers the controller show function
-// router.get('/:id', AxisController.show)
+// Create a GET show route "/:id" that triggers the controller show function
+router.get('/axis/:id', AxisController.show)
 
-// // Create a POST index route "/" that triggers the controller create function
-// router.post('/', AxisController.create)
+// Create a POST index route "/" that triggers the controller create function
+router.post('/axis/:id', AxisController.create)
 
-// // Create a GET edit route "/:id/edit" that triggers the controller edit function
-// router.get("/:id/edit", AxisController.edit)
+// Create a GET edit route "/:id/edit" that triggers the controller edit function
+router.get("/axis/:id/edit", AxisController.edit)
 
 // // Create a PUT update route "/:id" that triggers the controller update function
 // router.put('/:id', AxisController.update)

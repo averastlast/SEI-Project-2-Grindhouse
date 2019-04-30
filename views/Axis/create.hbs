@@ -4,7 +4,7 @@
 
 	<div id="edit-form">
 
-		<form action="/" method="POST" class="axis-new">
+		<form action="/axis/:id" method="POST" class="axis-new">
 			<div>
 				<label for="name">Name:</label>
 				<input type="text" name="name" id='name' placeholder="name">
@@ -18,7 +18,7 @@
 				<input type="checkbox" name="boostOffer" id='boostOffer' placeholder="">
 			</div>
 			<div>
-				<label for="costPerHour">Cost per hour for boosting:</label>
+				<label for="costPerHour">Cost per hour for boosting: $</label>
 				<input type="number" name="costPerHour" id='costPerHour' placeholder="price">
 			</div>
 			<input type="submit" class='submit-button' value="Submit">

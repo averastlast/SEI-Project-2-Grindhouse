@@ -4,17 +4,17 @@ const AxisController = {
   // function sends all Axis to axis/index.hbs view
   index: function(req,res) {
     Axis.find().then(axis=>{
-      res.render('Axis/index',{ axis });
+      res.render('axis/index',{ axis });
     })
   },
   // function that renders the axis/new.hbs form ???
   new: function(req,res) {
-    res.render("Axis/create");
+    res.render("axis/create");
   },
   // function that renders a single axis show page
   show: function(req,res) {
     Axis.findById(req.params.id).then(axis =>{
-      res.render("Axis/show", {axis})
+      res.render("axis/show", {axis})
     })
   },
   // Create a function that creates a new axis acc
@@ -29,7 +29,7 @@ const AxisController = {
   edit:function(req,res){
   
     Axis.findById(req.params.id).then(axis=>{
-      res.render('Axis/edit',{axis})
+      res.render('axis/edit',{axis})
       })
   },
   // Create a function that updates the axis acc and

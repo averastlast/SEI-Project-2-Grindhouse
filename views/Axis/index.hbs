@@ -4,20 +4,15 @@
 	{{#each axis}}
 
 	<div class="axis">
-	
 		<p>Name: {{name}}</p>
-	
 		<p>Email: {{email}}</p>
 		<p>Cost per hour for boosting ${{costPerHour}} hours</p>
-		<a href='/axis/{{_id}}'>
-			<h3>See More</h3>
-		</a>
+		<p><a href='/axis/{{_id}}'>See More</a></p>
 	</div>
 
 	{{/each}}
-
-	<a href="/axis/new">
-		<h2>Create a new account</h2>
-	</a>
-<a href="/">Return to Home Page</a>
+	<footer>
+		<a href="/axis/new">Create a new account</a>
+		<a href="/">Return to Home Page</a>
+	</footer>
 </main>

@@ -29,6 +29,16 @@ a {
     font-size: 3vh;
     background: rgba(0, 0, 0, 0.5)
 }
+.axis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 3vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2vh 1vw;
+}
 
 .axis-new {
     display: flex;
@@ -41,6 +51,16 @@ a {
     height: 30%;
 }
 
+.axis-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 3vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2vh 1vw;
+}
 .submit-button {
     color: red;
     background: black;
@@ -60,15 +80,16 @@ a {
     margin: 2vh 1vw;
 }
 
-.axis {
+.alt-new {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: .5%;
     color: white;
-    font-size: 3vh;
     background: rgba(0, 0, 0, 0.5);
     margin: 2vh 1vw;
+    height: 90%;
 }
 
 .alt-individual {
@@ -82,20 +103,8 @@ a {
     margin: 2vh 1vw;
 }
 
-.alt-new {
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: .5%;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 2vh 1vw;
-}
-
-.axis-individual {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: white;

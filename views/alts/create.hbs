@@ -3,30 +3,34 @@
 	<h2>Create Alt</h2>
 	<div id="edit-form">
 
-	<form action="/alts/:id" method="POST" class="alt-new">
-	<div>
-		<label for="alias">Alias: </label>
-    	<input type="text" name="alias" id='alias' placeholder="alias">
+		<form action="/alts/:id" method="POST" class="alt-new">
+			<div>
+				<label for="alias">Alias: </label>
+				<input type="text" name="alias" id='alias' placeholder="alias">
+			</div>
+			<div>
+				<label for="game">Game: </label>
+				<input type="text" name="game" id='game' placeholder="game">
+			</div>
+			<div>
+				<label for="platform">Platform: </label>
+				<input type="text" name="platform" id='platform' placeholder="platform">
+			</div>
+			<div>
+				<label for="youtubeLink">Youtube Link: </label>
+				<input type="text" name="youtubeLink" id='youtubeLink' placeholder="youtubeLink">
+			</div>
+			<p>"(NOTE! - please use embed YT link for display)"</p>
+			<div>
+				<label for="price">Price: $</label>
+				<input type="number" name="price" id='price' placeholder="price">
+			</div>
+			<input type="submit" class='submit-button' value="Submit">
+		</form>
+		
 	</div>
-	<div>
-		<label for="game">Game: </label>
-    	<input type="text" name="game" id='game' placeholder="game">
-	</div>
-	<div>
-		<label for="platform">Platform: </label>
-    	<input type="text" name="platform" id='platform' placeholder="platform">
-	</div>
-	<div>
-		<label for="youtubeLink">Youtube Link: </label>
-    	<input type="text" name="youtubeLink" id='youtubeLink' placeholder="youtubeLink">
-	</div>
-	<p>"(NOTE! - please use embed YT link for display)"</p>
-	<div>
-		<label for="price">Price: $</label>
-		<input type="number" name="price" id='price' placeholder="price">
-	</div>
-    <input type="submit" class='submit-button' value="Submit">
-	</form>
-<a href="/"><h3>Back to home</h3></a>
-	</div>
+	<footer>
+		<a href="/">Back to home</a>
+		<a href="/alts">Back to Alt Accounts</a>
+	</footer>
 </main>

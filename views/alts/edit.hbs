@@ -18,11 +18,16 @@
 				<input type="text" name="platform" id='platform' placeholder={{alts.platform}}>
 			</div>
 			<div>
+				<label for="hours">In-game hours: </label>
+				<input type="number" name="hours" id='hours' placeholder={{alts.hours}}>
+			</div>
+			<div>
 				<label for="youtubeLink">Youtube Link: </label>
 				<input type="text" name="youtubeLink" id='youtubeLink' placeholder={{alts.youtubeLink}}>
-				
 			</div>
-			<iframe width="560" height="315" src="{{alts.youtubeLink}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="{{alts.youtubeLink}}" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
 			<div>
 				<label for="price">Price: $</label>
 				<input type="number" name="price" id='price' placeholder={{alts.price}}>
@@ -32,5 +37,8 @@
 		</form>
 
 	</div>
-	<a href="/">Return to Home Page</a>
+	<footer>
+		<a href="/">Return to Home Page</a>
+		<a href="/alts">Back to Alt Accounts</a>
+	</footer>
 </main>

@@ -12,6 +12,14 @@ header {
     align-items: center;
     padding: 1%
 }
+
+.splashimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%
+}
+
 header > a {
     text-decoration: none;
     color: white;

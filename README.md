@@ -22,11 +22,14 @@ I had plans for a better website, but had to scale back due to time and difficul
 ## Prework
 
 ![Prework](public/img/prework/IMG_20190425_102512082.jpg)
-![Prework]()
-![Prework]()
-![Prework]()
-![Prework]()
-
+![Prework](public/img/prework/IMG_20190425_125602497.jpg)
+![Prework](public/img/prework/IMG_20190425_150503269.jpg)
+![Prework](public/img/prework/IMG_20190425_150507612.jpg)
+![Prework](public/img/prework/IMG_20190425_150516094.jpg)
+![Prework](public/img/prework/IMG_20190425_150518250.jpg)
+![Prework](public/img/prework/IMG_20190425_150522327.jpg)
+![Prework](public/img/prework/IMG_20190425_150526114.jpg)
+![Prework](public/img/prework/IMG_20190425_152630575.jpg)
 
 ## Future Development
 

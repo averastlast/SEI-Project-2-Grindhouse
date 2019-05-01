@@ -7,7 +7,6 @@ const Schema = mongoose.Schema
 const AxisSchema = new Schema(    {
     name: String,
     email: String,
-    boostOffer: Boolean,
     costPerHour: Number
 });
 

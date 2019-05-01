@@ -10,7 +10,6 @@ const AltSchema = new Schema(    {
     platform: String,
     hours: Number,
     youtubeLink: String,
-    forSale: Boolean,
     price: Number
 });
 

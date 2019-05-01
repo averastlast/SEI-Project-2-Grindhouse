@@ -3,7 +3,7 @@
 	<h2>Create Alt</h2>
 	<div id="edit-form">
 
-	<form action="/" method="POST" class="alt-new">
+	<form action="/alts/:id" method="POST" class="alt-new">
 	<div>
 		<label for="alias">Alias: </label>
     	<input type="text" name="alias" id='alias' placeholder="alias">
@@ -28,8 +28,7 @@
 		<label for="price">Price: $</label>
 		<input type="number" name="price" id='price' placeholder="price">
 	</div>
-
-    <input type="submit" class='submit-button' value="Submit" onclick="add()">
+    <input type="submit" class='submit-button' value="Submit">
 	</form>
 <a href="/"><h3>Back to home</h3></a>
 	</div>

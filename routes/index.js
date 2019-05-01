@@ -28,12 +28,8 @@ router.get("/axis/:id/edit", AxisController.edit)
 // Create a PUT update route "/:id" that triggers the controller update function - working
 router.put('/axis/:id', AxisController.update)
 
-// //buy
-// router.put('/:id/buy', AxisController.buy)
-
-// // Create a DELETE delete route "/:id" that triggers the controller delete function
-// router.delete('/:id',AxisController.delete)
-
+// Create a DELETE delete route "/:id" that triggers the controller delete function
+router.delete('/axis/:id',AxisController.delete)
 
 
 // Create a GET index route "/" that triggers the controller index function - working
@@ -46,19 +42,16 @@ router.get('/alts/new', AltsController.new)
 router.get('/alts/:id', AltsController.show)
 
 // Create a POST index route "/" that triggers the controller create function
-router.post('/axis/:id', AltsController.create)
+router.post('/alts/:id', AltsController.create)
 
 // Create a GET edit route "/:id/edit" that triggers the controller edit function
 router.get("/alts/:id/edit", AltsController.edit)
 
-// // Create a PUT update route "/:id" that triggers the controller update function
-// router.put('/:id', AltsController.update)
-
-// //buy
-// router.put('/:id/buy', AltsController.buy)
+// Create a PUT update route "/:id" that triggers the controller update function
+router.put('/alts/:id', AltsController.update)
 
 // Create a DELETE delete route "/:id" that triggers the controller delete function
-router.delete('/alts',AltsController.delete)
+router.delete('/alts/:id',AltsController.delete)
 
 
 

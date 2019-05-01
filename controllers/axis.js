@@ -22,7 +22,7 @@ const AxisController = {
   create:function(req,res){
     console.log(req)
     Axis.create(req.body)
-      .then(()=>res.redirect('/'))
+      .then(()=>res.redirect('/axis/'))
   },
   // Create a function that renders the edit.hbs page and
   // sends that a Axis' data to it
@@ -44,7 +44,7 @@ const AxisController = {
   // redirects back to index page "/"
   delete: function(req,res) {
     Axis.findByIdAndRemove(req.params.id).then(()=>{
-      res.redirect('/')
+      res.redirect('/axis/')
     })
   }
 }

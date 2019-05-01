@@ -4,22 +4,22 @@
 
 	<div id="edit-form" class="alt-container">
 
-		<form action="/{{axis._id}}?_method=PUT" method="POST" class="alt-new">
+		<form action="/alts/{{alts._id}}?_method=PUT" method="POST" class="alt-new">
 			<div>
 				<label for="alias">Alias: </label>
-				<input type="text" name="alias" id='alias' placeholder={{alt.alias}}>
+				<input type="text" name="alias" id='alias' placeholder={{alts.alias}}>
 			</div>
 			<div>
 				<label for="game">Game: </label>
-				<input type="text" name="game" id='game' placeholder={{alt.game}}>
+				<input type="text" name="game" id='game' placeholder={{alts.game}}>
 			</div>
 			<div>
 				<label for="platform">Platform: </label>
-				<input type="text" name="platform" id='platform' placeholder={{alt.platform}}>
+				<input type="text" name="platform" id='platform' placeholder={{alts.platform}}>
 			</div>
 			<div>
 				<label for="youtubeLink">Youtube Link: </label>
-				<input type="text" name="youtubeLink" id='youtubeLink' placeholder={{alt.youtubeLink}}>
+				<input type="text" name="youtubeLink" id='youtubeLink' placeholder={{alts.youtubeLink}}>
 			</div>
 			<div>
 				<label for="forSale">Account for Sale? </label>
@@ -27,7 +27,7 @@
 			</div>
 			<div>
 				<label for="price">Price: $</label>
-				<input type="number" name="price" id='price' placeholder={{alt.price}}>
+				<input type="number" name="price" id='price' placeholder={{alts.price}}>
 			</div>
 
 			<input type="submit" class='submit-button' value="Submit" onclick="add()">

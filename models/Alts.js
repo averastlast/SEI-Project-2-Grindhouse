@@ -1,6 +1,7 @@
 // requirements: require db/connection as 'mongoose'
 const mongoose = require('../db/connection.js')
 
+
 const Schema = mongoose.Schema
 // create your donut schema:
 const AltSchema = new Schema(    {
@@ -10,8 +11,7 @@ const AltSchema = new Schema(    {
     hours: Number,
     youtubeLink: String,
     forSale: Boolean,
-    price: Number,
-    parentAxis: objectId
+    price: Number
 });
 
 // export the donut model with module.exports

@@ -1,19 +1,24 @@
 <main>
-	<h2>Account</h2>
+	<h2>Axis Accounts:</h2>
 
-		{{#each axis}}
+	{{#each axis}}
 
-			<div class="axis">
-
-				<a href='{{_id}}'><h3>See More</h3></a>
-
-				<p>{{name}}</p>
-
-			</div>
-
-		{{/each}}
+	<div class="axis">
 	
-<a href="/new"><h2>Create a new account</h2></a>
+		<p>Name: {{name}}</p>
+	
+		<p>Email: {{email}}</p>
+		<p>Offers boosting services? {{boostOffer}}</p>
+		<p>Cost per hour ${{costPerHour}} hours</p>
+		<a href='/axis/{{_id}}'>
+			<h3>See More</h3>
+		</a>
+	</div>
 
+	{{/each}}
+
+	<a href="/axis/new">
+		<h2>Create a new account</h2>
+	</a>
+<a href="/">Return to Home Page</a>
 </main>
-

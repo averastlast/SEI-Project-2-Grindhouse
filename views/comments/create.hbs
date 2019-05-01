@@ -1,0 +1,29 @@
+<main>
+
+	<h2>Create Your Comment</h2>
+
+	<div id="edit-form">
+
+		<form action="/comments/:id" method="POST" class="comment-new">
+			<div>
+				<label for="alias">Alias:</label>
+				<input type="text" name="alias" id='alias' placeholder="alias">
+			</div>
+			<div>
+				<label for="game">Game:</label>
+				<input type="text" name="game" id='game' placeholder="game">
+			</div>
+			<div>
+				<label for="feedback">Feedback:</label>
+			</div>
+			<textarea cols="25" rows="8" name="feedback" id='feedback' placeholder="feedback"></textarea> 
+			<input type="submit" class='submit-button' value="Submit">
+		</form>
+
+	</div>
+	<footer>
+	<a href="/">Back to home</a>
+	<a href="/comments">Back to Comments</a>
+	</footer>
+</main>
+

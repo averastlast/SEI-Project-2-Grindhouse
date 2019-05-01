@@ -1,0 +1,19 @@
+<main>
+	<h2>Comments:</h2>
+
+	{{#each comments}}
+
+	<div class="comment">
+		<p>Alias: {{alias}}</p>
+		<p>Game: {{game}}</p>
+		<p>Feedback: {{feedback}}</p>
+		<p><a href='/comments/{{_id}}'>See More</a></p>
+	</div>
+
+	{{/each}}
+	<footer>
+		<a href="/comments/new">Create a new comment</a>
+		<a href="/">Return to Home Page</a>
+	</footer>
+</main>
+

@@ -103,6 +103,46 @@ a {
     margin: 2vh 1vw;
 }
 
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 3vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2vh 1vw;
+}
+
+.comment-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2vh 1vw;
+    height: 60%;
+}
+
+.comment-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 3vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2vh 1vw;
+}
+
+#feedback {
+    height:50%;
+    width: 700px;
+}
+
 footer {
     display: flex;
     align-items: center;

@@ -22,11 +22,6 @@ app.use(logger('dev'))
 // Links the server to our Router File
 app.use('/', routes)
 
-// LISTENERS
-const port = process.env.PORT || 3000
-app.listen(port, "0.0.0.0", function(){
-    console.log("hello from the server side")
-})
 
 const mongoose = require('mongoose');
 
@@ -45,3 +40,9 @@ if (process.env.MONGODB_URI) {
   mongoose.connection.once('open', function() {
     console.log("Mongoose has connected to MongoDB!");
   });
+
+  // LISTENERS
+const port = process.env.PORT || 3000
+app.listen(port, "0.0.0.0", function(){
+    console.log("hello from the server side")
+})

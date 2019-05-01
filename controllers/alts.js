@@ -43,7 +43,7 @@ const AltController = {
     // redirects back to index page "/"
     delete: function(req,res) {
       Alts.findByIdAndRemove(req.params.id).then(()=>{
-        res.redirect('/')
+        res.redirect('/alts/')
       })
     }
   }

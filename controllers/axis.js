@@ -1,9 +1,9 @@
-const Axis = require("../models/Axis");
+const Axises = require("../models/Axis");
 
 const AxisController = {
   // function sends all Axis to axis/index.hbs view
   index: function(req,res) {
-    Axis.find().then(axis=>{
+    Axises.find().then(axis=>{
       res.render('axis/index',{ axis });
     })
   },

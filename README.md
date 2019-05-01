@@ -7,6 +7,8 @@ I had plans for a better website, but had to scale back due to time and difficul
 
 This version is the scaled back version though. All the schemas have been separated, nothing is nested, no ObjectId used. Users can perform CRUD on all three schemas equally.
 
+Had a stupid issue with Axis paths working locally but not remotely. Had to revert views axis file from "axis" back to earlier "Axis" name. Captialization was the issue. Ignored locally but not by Heroku.
+
 **Live Site:** <https://guarded-oasis-67077.herokuapp.com/>
 
 ## Technologies Used

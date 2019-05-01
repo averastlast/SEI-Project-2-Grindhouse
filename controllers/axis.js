@@ -37,7 +37,7 @@ const AxisController = {
   //new: bool - true to return the modified document rather than the original. defaults to false
   update:function(req,res){
     Axis.findByIdAndUpdate(req.params.id, req.body,{new:true}).then(()=>{
-    res.redirect("/" + req.params.id)
+    res.redirect("/axis/" + req.params.id)
       })
   },
   // Create a function that deletes the axis acc and

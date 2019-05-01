@@ -10,7 +10,8 @@ const AltSchema = new Schema(    {
     hours: Number,
     youtubeLink: String,
     forSale: Boolean,
-    price: Number
+    price: Number,
+    parentAxis: objectId
 });
 
 // export the donut model with module.exports

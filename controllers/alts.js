@@ -36,7 +36,7 @@ const AltController = {
     //new: bool - true to return the modified document rather than the original. defaults to false
     update:function(req,res){
       Alts.findByIdAndUpdate(req.params.id, req.body,{new:true}).then(()=>{
-      res.redirect("/" + req.params.id)
+      res.redirect("/alts/" + req.params.id)
         })
     },
     // Create a function that deletes the alts acc and

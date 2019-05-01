@@ -16,17 +16,17 @@ router.get('/axis', AxisController.index)
 // Create a GET new route "/new" that triggers the controller new function - working
 router.get('/axis/new', AxisController.new)
 
-// Create a GET show route "/:id" that triggers the controller show function
+// Create a GET show route "/:id" that triggers the controller show function - working
 router.get('/axis/:id', AxisController.show)
 
 // Create a POST index route "/" that triggers the controller create function
 router.post('/axis/:id', AxisController.create)
 
-// Create a GET edit route "/:id/edit" that triggers the controller edit function
+// Create a GET edit route "/:id/edit" that triggers the controller edit function - working
 router.get("/axis/:id/edit", AxisController.edit)
 
-// // Create a PUT update route "/:id" that triggers the controller update function
-// router.put('/:id', AxisController.update)
+// Create a PUT update route "/:id" that triggers the controller update function - working
+router.put('/axis/:id', AxisController.update)
 
 // //buy
 // router.put('/:id/buy', AxisController.buy)
@@ -45,11 +45,11 @@ router.get('/alts/new', AltsController.new)
 // Create a GET show route "/:id" that triggers the controller show function - working
 router.get('/alts/:id', AltsController.show)
 
-// // Create a POST index route "/" that triggers the controller create function
-// router.post('/', AltsController.create)
+// Create a POST index route "/" that triggers the controller create function
+router.post('/axis/:id', AltsController.create)
 
-// // Create a GET edit route "/:id/edit" that triggers the controller edit function
-// router.get("/:id/edit", AltsController.edit)
+// Create a GET edit route "/:id/edit" that triggers the controller edit function
+router.get("/alts/:id/edit", AltsController.edit)
 
 // // Create a PUT update route "/:id" that triggers the controller update function
 // router.put('/:id', AltsController.update)
@@ -57,8 +57,8 @@ router.get('/alts/:id', AltsController.show)
 // //buy
 // router.put('/:id/buy', AltsController.buy)
 
-// // Create a DELETE delete route "/:id" that triggers the controller delete function
-// router.delete('/:id',AltsController.delete)
+// Create a DELETE delete route "/:id" that triggers the controller delete function
+router.delete('/alts',AltsController.delete)
 
 
 

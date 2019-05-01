@@ -6,6 +6,7 @@ const Schema = mongoose.Schema
 const CommentSchema = new Schema(    {
     alis: String,
     feedback: String,
+    parentAlt : objectId
 });
 
 // export the donut model with module.exports

@@ -5,12 +5,14 @@ const app = express()
 const methodOverride = require('method-override')
 const logger = require('morgan')
 const routes = require('./routes/index')
+const path = require('path')
 
 // MIDDLEWARE
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(methodOverride('_method'))
 
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'hbs')
 
 app.use(express.static(__dirname + '/public'))
